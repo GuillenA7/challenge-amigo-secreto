@@ -38,7 +38,7 @@ La aplicación permite al usuario ingresar nombres de amigos y realizar un sorte
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+   git clone https://github.com/GuillenA7/challenge-amigo-secreto.git
 
 2. Abre el archivo index.html en tu navegador.
 3. Escribe nombres en el campo de entrada y haz clic en “Añadir”.
