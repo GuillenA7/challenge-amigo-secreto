@@ -41,6 +41,24 @@ La aplicación permite al usuario ingresar nombres de amigos y realizar un sorte
    git clone https://github.com/tu-usuario/nombre-del-repositorio.git
 
 2. Abre el archivo index.html en tu navegador.
+3. Escribe nombres en el campo de entrada y haz clic en “Añadir”.
+4. Haz clic en “Sortear amigo” para elegir un nombre al azar.
+
+---
+
+## 🖼️ Capturas de pantalla
+
+### Página principal
+
+<img width="1919" height="935" alt="Captura de pantalla 2025-08-02 222516" src="https://github.com/user-attachments/assets/6f0667ee-8718-411d-aa37-f58ad2a512d9" />
+
+
+### Lista de amigos actualizada
+<img width="1919" height="934" alt="Captura de pantalla 2025-08-02 222536" src="https://github.com/user-attachments/assets/83ae891d-9c93-424e-848e-e704f3fbc310" />
+
+### Amigo secreto
+<img width="1919" height="936" alt="Captura de pantalla 2025-08-02 222547" src="https://github.com/user-attachments/assets/ab5c1ae1-6ebe-49e5-b9c8-e9eca084c7fa" />
+
 
 ---
 
@@ -48,8 +66,11 @@ La aplicación permite al usuario ingresar nombres de amigos y realizar un sorte
 👉 Puedes ver la aplicación funcionando aquí:
 https://guillena7.github.io/challenge-amigo-secreto/
 
-📝 Autor
-Desarrollado por Jose Adrian Guillen Lamas
+---
+
+## 📝 Autor
+Desarrollado por **Jose Adrian Guillen Lamas** - [GuillenA7](https://github.com/GuillenA7)
+
 Programa Oracle Next Education – Alura Latam
 
 ---
