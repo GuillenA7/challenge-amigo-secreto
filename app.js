@@ -1,59 +1,54 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
+// Lista para almacenar los nombres de los amigos
 let amigos = [];
 
+// Agrega un nuevo amigo desde el campo de texto
 function agregarAmigo() {
-    // 1. Capturar el valor del campo de entrada
     const input = document.getElementById("amigo");
-    const nombre = input.value.trim(); // .trim() elimina espacios extra
+    const nombre = input.value.trim(); // Elimina espacios al inicio/final
 
-    // 2. Validar la entrada
+    // Validar que el nombre no esté vacío
     if (nombre === "") {
         alert("Por favor, inserte un nombre.");
         return;
     }
 
-    // 3. Actualizar el array de amigos
+    // Agregar el nombre al array y actualizar la lista visible
     amigos.push(nombre);
+    actualizarListaDeAmigos();
 
-    actualizarListaDeAmigos();      // ← Aquí actualiza la vista
-
-    // 4. Limpiar el campo de entrada
+    // Limpiar el campo de entrada
     input.value = "";
 
-    // (Opcional) Mostrar en consola
+    // Mostrar en consola (opcional para depuración)
     console.log(amigos);
 }
 
+// Muestra en pantalla la lista actual de amigos
 function actualizarListaDeAmigos() {
-    // 1. Obtener el elemento UL donde se mostrará la lista
     const lista = document.getElementById("listaAmigos");
+    lista.innerHTML = ""; // Limpiar contenido anterior
 
-    // 2. Limpiar la lista para evitar duplicados
-    lista.innerHTML = "";
-
-    // 3. Iterar sobre el arreglo de amigos
+    // Recorrer el array y agregar cada nombre como un <li>
     for (let i = 0; i < amigos.length; i++) {
-        // 4. Crear un nuevo elemento <li> por cada amigo
         const li = document.createElement("li");
         li.textContent = amigos[i];
         lista.appendChild(li);
     }
 }
 
+// Realiza el sorteo de un amigo al azar y muestra el resultado
 function sortearAmigo() {
-    // 1. Validar que haya amigos en la lista
+    // Validar que haya al menos un nombre en la lista
     if (amigos.length === 0) {
         alert("No hay nombres en la lista. Por favor, agrega al menos uno.");
         return;
     }
 
-    // 2. Generar un índice aleatorio
+    // Seleccionar un índice aleatorio dentro del array
     const indiceAleatorio = Math.floor(Math.random() * amigos.length);
-
-    // 3. Obtener el nombre correspondiente
     const amigoSorteado = amigos[indiceAleatorio];
 
-    // 4. Mostrar el resultado en el HTML
+    // Mostrar el resultado en el elemento <ul id="resultado">
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = `<li>🎉 El amigo secreto es: <strong>${amigoSorteado}</strong></li>`;
 }
